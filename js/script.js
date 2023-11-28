@@ -1,24 +1,44 @@
 // seleziona elemento contenitore
  const gridElement = document.querySelector(".grid");
 
-
- for ( let i = 0; i < 100 ; i++){
-
-    const newElement = createMyElement("div" , "cell");
-    newElement.append(i + 1);
+//  seleziona tasto
+const playButton = document.getElementById("play");
 
 
 
-    newElement.addEventListener("click",
 
-        function () {
-            newElement.classList.add("clicked");
-        }
-    );
+playButton.addEventListener("click",
 
-    gridElement.append(newElement);
 
- }
+    function () {
+
+        for ( let i = 0; i < 100 ; i++){
+
+            const newElement = createMyElement("div" , "cell");
+            newElement.append(i + 1);
+        
+        
+        
+            newElement.addEventListener("click",
+        
+                function () {
+                    newElement.classList.add("clicked");
+                }
+            );
+        
+            gridElement.append(newElement);
+        
+         }
+        
+    }
+
+);
+
+
+ 
+
+
+
 
 //  funzioni
 
