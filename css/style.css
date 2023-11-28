@@ -77,8 +77,6 @@
     width: calc(((100vh - 160px) * 95 ) / 100 );
     display: flex;
     flex-wrap: wrap;
-    /* debug */
-    background-color: bisque;
  }
 
  .cell{
