@@ -16,82 +16,34 @@ playButton.addEventListener("click",
 function(){
 
     gridElement.innerHTML = "";
+    let numCelle = 100;
+    let difficoltaSelezionata = "cell" ;
 
-    
     if (difficolta.value === "Difficile"){
-    
-            for ( let i = 0; i < 49 ; i++){
-    
-                const newElement = createMyElement("div" , "cell-3");
-                newElement.append(i + 1);
-            
-            
-            
-                newElement.addEventListener("click",
-            
-                    function () {
-                        newElement.classList.add("clicked");
-                    }
-                );
-            
-                gridElement.append(newElement);
-            
-             }
-    
-            
-        
-    
-    } else if ( difficolta.value === "Medio") {
-    
-    
-            for ( let i = 0; i < 81 ; i++){
-    
-                const newElement = createMyElement("div" , "cell-2");
-                newElement.append(i + 1);
-            
-            
-            
-                newElement.addEventListener("click",
-            
-                    function () {
-                        newElement.classList.add("clicked");
-                    }
-                );
-            
-                gridElement.append(newElement);
-            
-             }
-    
-            
-        
-    
-    } else{
-    
-    
-    
-            for ( let i = 0; i < 100 ; i++){
-    
-                const newElement = createMyElement("div" , "cell");
-                newElement.append(i + 1);
-            
-            
-            
-                newElement.addEventListener("click",
-            
-                    function () {
-                        newElement.classList.add("clicked");
-                    }
-                );
-            
-                gridElement.append(newElement);
-            
-             }
-    
-            
-        
+        numCelle = 49;
+        difficoltaSelezionata = "cell-3";
+    } else if (difficolta.value === "Medio"){
+        numCelle = 81;
+        difficoltaSelezionata ="cell-2";
     }
 
-
+    for ( let i = 0; i < numCelle ; i++){
+    
+        const newElement = createMyElement("div" , difficoltaSelezionata);
+        newElement.append(i + 1);
+    
+    
+    
+        newElement.addEventListener("click",
+    
+            function () {
+                newElement.classList.add("clicked");
+            }
+        );
+    
+        gridElement.append(newElement);
+    
+     }
 }
 
 
@@ -99,14 +51,6 @@ function(){
 
    
 );
-
-console.log(difficolta.value)
-
-
- 
-
-
-
 
 //  funzioni
 
