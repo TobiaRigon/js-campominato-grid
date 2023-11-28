@@ -87,9 +87,31 @@
 border: 1px solid black;
  }
 
+ .cell-2{
+    width: calc((((100vh - 160px) * 95 ) / 100) /9 );
+    height:calc((((100vh - 160px) * 95 ) / 100) /9 ) ;
+    line-height:calc((((100vh - 160px) * 95 ) / 100) /9 ) ;
+    text-align: center;
+   border: 1px solid black;
+    }
+
+    .cell-3{
+        width: calc((((100vh - 160px) * 95 ) / 100) /7 );
+        height:calc((((100vh - 160px) * 95 ) / 100) /7 ) ;
+        line-height:calc((((100vh - 160px) * 95 ) / 100) /7 ) ;
+        text-align: center;
+       border: 1px solid black;
+        }
+
  .clicked{
     background-color: aqua;
  }
  
+
+ /* bonus */
+
+ #difficolta{
+   margin-right: 10px;
+ }
  
  
